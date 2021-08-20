@@ -1,0 +1,28 @@
+.breadcrumb {
+    // border-bottom: 1px solid #EEE;
+    padding: .1em 0em .1em;
+    font-size: 0.875em;
+    margin: 0px auto 5px;
+    ul {
+        @include li-reset;
+        li {
+            display: inline-block;
+            margin: 0px .1em .1em 0px;
+            color: $primaryColor;
+            &:before {
+                content: ">";
+                display: inline-block;
+                // padding: 0px 4px;
+                margin: 0px 5px 0px 5px;
+                color: #666;
+            }
+            &:first-child:before {
+                content: "";
+                display: none;
+            }
+        }
+    }
+    a {
+        @include aSetting_nocolor;
+    }
+}
