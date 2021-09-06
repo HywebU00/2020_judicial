@@ -2,327 +2,430 @@
 <html lang="zh-Hant" class="no-js">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>司法院全球資訊網切版檔案</title>
-    <!--[if lt IE 9]>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>司法院全球資訊網切版檔案</title>
+  <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
 <![endif]-->
-<!-- hyUI -->
-<link rel="stylesheet" href="css/judicial.css">
-<style>
+  <!-- hyUI -->
+  <link rel="stylesheet" href="css/judicial.css">
+  <style>
     .demo_wrap {
-        max-width: 1000px;
-        margin: 0em auto 1em;
-        padding: 15px 15px 3em;
-        clear: both;
-        background: #FFF
+      max-width: 1000px;
+      margin: 0em auto 1em;
+      padding: 15px 15px 3em;
+      clear: both;
+      background: #FFF
     }
+    
     .demo_wrap h1 {
-        display: block;
-        max-width: 300px;
-        float: left;
-        margin-right: 1em
+      display: block;
+      max-width: 300px;
+      float: left;
+      margin-right: 1em
     }
+    
     @media screen and (max-width:545px) {
-        .demo_wrap h1 {
-            max-width: 100%;
-            float: none;
-            text-align: center
-        }
+      .demo_wrap h1 {
+        max-width: 100%;
+        float: none;
+        text-align: center
+      }
     }
+    
     .demo_wrap h1 img {
-        /* width: 300px */
+      /* width: 300px */
     }
+    
     .num {
-        width: 12%
+      width: 12%
     }
+    
     body {
-        counter-reset: num
+      counter-reset: num
     }
+    
     table {
-        margin-bottom: 1em
+      margin-bottom: 1em
     }
+    
     table caption {
-        text-align: left;
-        font-weight: bold;
-        font-size: 1.25em;
-        padding: .5em 0;
-        color: #ff5050
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.25em;
+      padding: .5em 0;
+      color: #ff5050
     }
+    
     tbody tr td:first-child:before {
-        counter-increment: num;
-        display: block;
-        text-align: center;
-        content: counters(num, ".") " "
+      counter-increment: num;
+      display: block;
+      text-align: center;
+      content: counters(num, ".") " "
     }
+    
     tbody tr td:nth-child(2) {
-        width: 35%
+      width: 35%
     }
-    .btn_grp{
-        text-align: right;
+    
+    .btn_grp {
+      text-align: right;
     }
+    
     @media screen and (max-width:545px) {
-       .btn_grp{
+      .btn_grp {
         text-align: center;
-    } 
-}
-</style>
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="demo_wrap">
-        <h1><img src="images/logo.png" alt=""></h1>
-        <!-- <div class="btn_grp">
+  <div class="demo_wrap">
+    <h1><img src="images/logo.png" alt=""></h1>
+    <!-- <div class="btn_grp">
             <a href="#" class="btn">切版檔案請按此下載</a>
         </div>
         <hr> -->
-        <div class="table_wrapper">
-            <!-- hyUI 標準頁面 -->
-            <table>
-                <thead>
-                    <tr>
-                        <th class="num">編號</th>
-                        <th>頁面名稱</th>
-                        <th>檔案名稱</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td>首頁</td>
-                        <!-- 連結放到a裡面就好 -->
-                        <td><a href="mp.php" target="blank"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>英文首頁</td>
-                        <!-- 連結放到a裡面就好 -->
-                        <td><a href="en_mp.php" target="blank"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>列表頁</td>
-                        <td><a href="lp.php" target="blank"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>列表頁-表格</td>
-                        <td><a href="lp_table.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>列表頁-表格(無表頭)</td>
-                        <td><a href="lp_table2.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>列表頁-相簿</td>
-                        <td><a href="lp_album.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>列表頁-影音</td>
-                        <td><a href="lp_video.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>內容頁</td>
-                        <td><a href="cp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>內容頁2</td>
-                        <td><a href="cp2.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>內容頁-照片</td>
-                        <td><a href="cp_photo.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>節點頁</td>
-                        <td><a href="np.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>轉寄友人</td>
-                        <td><a href="fp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>意見信箱</td>
-                        <td><a href="qp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>網站地圖</td>
-                        <td><a href="sitemap.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>404 網站錯誤</td>
-                        <td><a href="404.htm"></a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- 專案客製化頁面 -->
-            <table>
-                <thead>
-                    <tr>
-                        <th class="num">編號</th>
-                        <th>頁面名稱</th>
-                        <th>檔案名稱</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td>司法改革導覽頁</td>
-                        <td><a href="reform.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法改革項目條列頁</td>
-                        <td><a href="reform_lp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法改革查詢結果頁</td>
-                        <td><a href="reform_search.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>常見問答</td>
-                        <td><a href="qa.php"></a></td>
-                    </tr> 
-                    <!-- <tr>
+    <div class="table_wrapper">
+      <!-- hyUI 標準頁面 -->
+      <table>
+        <thead>
+          <tr>
+            <th class="num">編號</th>
+            <th>頁面名稱</th>
+            <th>檔案名稱</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>首頁</td>
+            <!-- 連結放到a裡面就好 -->
+            <td>
+              <a href="mp.php" target="blank"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>英文首頁</td>
+            <!-- 連結放到a裡面就好 -->
+            <td>
+              <a href="en_mp.php" target="blank"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>列表頁</td>
+            <td>
+              <a href="lp.php" target="blank"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>列表頁-表格</td>
+            <td>
+              <a href="lp_table.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>列表頁-表格(無表頭)</td>
+            <td>
+              <a href="lp_table2.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>列表頁-相簿</td>
+            <td>
+              <a href="lp_album.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>列表頁-影音</td>
+            <td>
+              <a href="lp_video.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>內容頁</td>
+            <td>
+              <a href="cp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>內容頁2</td>
+            <td>
+              <a href="cp2.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>內容頁-照片</td>
+            <td>
+              <a href="cp_photo.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>節點頁</td>
+            <td>
+              <a href="np.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>轉寄友人</td>
+            <td>
+              <a href="fp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>意見信箱</td>
+            <td>
+              <a href="qp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>網站地圖</td>
+            <td>
+              <a href="sitemap.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>404 網站錯誤</td>
+            <td>
+              <a href="404.htm"></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- 專案客製化頁面 -->
+      <table>
+        <thead>
+          <tr>
+            <th class="num">編號</th>
+            <th>頁面名稱</th>
+            <th>檔案名稱</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>司法改革導覽頁</td>
+            <td>
+              <a href="reform.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法改革項目條列頁</td>
+            <td>
+              <a href="reform_lp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法改革查詢結果頁</td>
+            <td>
+              <a href="reform_search.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>常見問答</td>
+            <td>
+              <a href="qa.php"></a>
+            </td>
+          </tr>
+          <!-- <tr>
                         <td></td>
                         <td>首長介紹</td>
                         <td><a href="..."></a></td>
                     </tr> -->
-                    <tr>
-                        <td></td>
-                        <td>書狀範例條列頁</td>
-                        <td><a href="documents_lp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>書狀範例內容頁</td>
-                        <td><a href="documents_cp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法公報</td>
-                        <td><a href="communique_lp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法公報cp</td>
-                        <td><a href="communique_cp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法週刊搜尋lp</td>
-                        <td><a href="weekly_lp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法週刊cp</td>
-                        <td><a href="weekly_cp.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>司法週刊最新</td>
-                        <td><a href="weekly_new.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>年度大事記</td>
-                        <td><a href="events.php"></a></td>
-                    </tr>  
-                    <tr>
-                        <td></td>
-                        <td>組織與職掌</td>
-                        <td><a href="organization.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>各廳處主管名錄</td>
-                        <td><a href="supervisor.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>院會重要決議</td>
-                        <td><a href="meeting_decision.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>民間公證人名冊</td>
-                        <td><a href="notary.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>鑑定人（機關）參考名冊</td>
-                        <td><a href="appraiser.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>特約通譯</td>
-                        <td><a href="interpreter.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>主管法規異動</td>
-                        <td><a href="modify.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>法律修訂進度</td>
-                        <td><a href="schedule.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>引用兩公約裁判書</td>
-                        <td><a href="humanrights.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>行事曆</td>
-                        <td><a href="calendar.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>公示送達公告及其他頁面</td>
-                        <td><a href="lp_table_list.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>特殊條列</td>
-                        <td><a href="lp_new.php"></a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>專業人士</td>
-                        <td><a href="professional.php"></a></td>
-                    </tr>   
-                    <tr>
-                        <td></td>
-                        <td>電子報</td>
-                        <td><a href="epaper.htm"></a></td>
-                    </tr>   
-                    <tr>
-                        <td></td>
-                        <td>視訊會議cp</td>
-                        <td><a href="webcam_cp.php"></a></td>
-                    </tr> 
-                </tbody>
-            </table>
+          <tr>
+            <td></td>
+            <td>adr</td>
+            <td>
+              <a href="adr_lp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>書狀範例條列頁</td>
+            <td>
+              <a href="documents_lp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>書狀範例內容頁</td>
+            <td>
+              <a href="documents_cp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法公報</td>
+            <td>
+              <a href="communique_lp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法公報cp</td>
+            <td>
+              <a href="communique_cp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法週刊搜尋lp</td>
+            <td>
+              <a href="weekly_lp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法週刊cp</td>
+            <td>
+              <a href="weekly_cp.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>司法週刊最新</td>
+            <td>
+              <a href="weekly_new.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>年度大事記</td>
+            <td>
+              <a href="events.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>組織與職掌</td>
+            <td>
+              <a href="organization.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>各廳處主管名錄</td>
+            <td>
+              <a href="supervisor.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>院會重要決議</td>
+            <td>
+              <a href="meeting_decision.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>民間公證人名冊</td>
+            <td>
+              <a href="notary.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>鑑定人（機關）參考名冊</td>
+            <td>
+              <a href="appraiser.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>特約通譯</td>
+            <td>
+              <a href="interpreter.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>主管法規異動</td>
+            <td>
+              <a href="modify.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>法律修訂進度</td>
+            <td>
+              <a href="schedule.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>引用兩公約裁判書</td>
+            <td>
+              <a href="humanrights.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>行事曆</td>
+            <td>
+              <a href="calendar.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>公示送達公告及其他頁面</td>
+            <td>
+              <a href="lp_table_list.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>特殊條列</td>
+            <td>
+              <a href="lp_new.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>專業人士</td>
+            <td>
+              <a href="professional.php"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>電子報</td>
+            <td>
+              <a href="epaper.htm"></a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>視訊會議cp</td>
+            <td>
+              <a href="webcam_cp.php"></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-            <!--  -->
-            <!-- <h2>兒童版</h2>   
+      <!--  -->
+      <!-- <h2>兒童版</h2>
             <table>
                 <thead>
                     <tr>
@@ -364,21 +467,21 @@
                     </tr>
                 </tbody>
             </table> -->
-        </div>
     </div>
-    <a href="javascript:;" class="scrollToTop" >回頁首</a>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="vendor/jquery.easing.min.js"></script>
-    <script src="js/hyui.js"></script>
-    <script src="js/customize.js"></script>
-    <script>
-        $(function() {
-            $('tbody').find('a').each(function(index, el) {
-                var Link = $(this).attr('href');
-                $(this).text(Link);
-            });
-        })
-    </script>
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="vendor/jquery.easing.min.js"></script>
+  <script src="js/hyui.js"></script>
+  <script src="js/customize.js"></script>
+  <script>
+    $(function() {
+      $('tbody').find('a').each(function(index, el) {
+        var Link = $(this).attr('href');
+        $(this).text(Link);
+      });
+    })
+  </script>
 </body>
 
 </html>
