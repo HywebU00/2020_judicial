@@ -182,6 +182,12 @@
               <li>更新日期:2018-03-20</li>
               <li>發布單位:移民輔導科</li>
             </ul>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/54VyjWCGQQU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="embed-container">
+              <iframe src="https://www.youtube.com/embed/54VyjWCGQQU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
           </section>
           <!-- CP End -->
         </div>
