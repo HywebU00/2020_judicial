@@ -13274,9 +13274,11 @@ a.goCenter:hover, a.goCenter:focus {
   .left_block,
   .function_panel,
   .innerpage:before,
-  .table_list_search_block .search_btn, .table_list_search_block .table_list_search .fatfooter,
+  .table_list_search_block .search_btn,
+  .table_list_search_block .table_list_search .fatfooter,
   .fatfooter nav,
-  footer, .festival_b,
+  footer,
+  .festival_b,
   .accesskey,
   .submenu {
     display: none;
@@ -13312,6 +13314,9 @@ a.goCenter:hover, a.goCenter:focus {
   }
   .innerpage .table_list_search_block {
     margin-top: 0;
+  }
+  .innerpage:before {
+    height: 0;
   }
   .main,
   .content {
@@ -13384,7 +13389,7 @@ a.goCenter:hover, a.goCenter:focus {
   }
   .main table,
   .content table {
-    background: #FFF;
+    background: #fff;
   }
   .main li,
   .content li {
@@ -13432,7 +13437,7 @@ a.goCenter:hover, a.goCenter:focus {
     width: 30%;
     height: 4cm;
     display: inline-block;
-    background: #DEDEDE;
+    background: #dedede;
     position: relative;
   }
   .lightbox_slider .cp_slider .slick-slide:before {

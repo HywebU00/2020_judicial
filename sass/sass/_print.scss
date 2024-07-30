@@ -5,11 +5,13 @@
   /* -------------------------------不需要列印的區塊，請放置於這----//*/
   header,
   .left_block,
-  .function_panel,  
-  .innerpage:before, 
-  .table_list_search_block .search_btn,.table_list_search_block .table_list_search
-  .fatfooter,.fatfooter nav,
-  footer,.festival_b,
+  .function_panel,
+  .innerpage:before,
+  .table_list_search_block .search_btn,
+  .table_list_search_block .table_list_search .fatfooter,
+  .fatfooter nav,
+  footer,
+  .festival_b,
   .accesskey,
   .submenu {
     display: none;
@@ -18,83 +20,86 @@
   /* -------------------------------各別顯示設定----//*/
   body {
     background: transparent;
-        // font-size: 12pt;
-        float: none;
-        width: 100%;
-        @extend %no-bg;
-        -webkit-print-color-adjust: exact;
-      }
-      .container {
-        margin: 0px auto;
-        max-width: 100% !important;
-        width: 100% !important;
-        @include gutter(0);
-      }
-      .cp {
-        @include gutter(0);
-      }
-      .innerpage {
-        margin-top: 0 !important;
-        .table_list_search_block{
-          margin-top: 0;
-        }
-      }
-      .main,
-      .content {
-        @include gutter(0);
-        width: 100% !important;
-        max-width: 100%;
-        box-shadow: none;
-        float: none;
-        // font-size: 12pt;
-        @include clearfix;
-        @extend %no-bg;
-        padding-top: 0px !important;
+    // font-size: 12pt;
+    float: none;
+    width: 100%;
+    @extend %no-bg;
+    -webkit-print-color-adjust: exact;
+  }
+  .container {
+    margin: 0px auto;
+    max-width: 100% !important;
+    width: 100% !important;
+    @include gutter(0);
+  }
+  .cp {
+    @include gutter(0);
+  }
+  .innerpage {
+    margin-top: 0 !important;
+    .table_list_search_block {
+      margin-top: 0;
+    }
+  }
+  .innerpage:before {
+    height: 0;
+  }
+  .main,
+  .content {
+    @include gutter(0);
+    width: 100% !important;
+    max-width: 100%;
+    box-shadow: none;
+    float: none;
+    // font-size: 12pt;
+    @include clearfix;
+    @extend %no-bg;
+    padding-top: 0px !important;
 
-        img {
-          &.float_left {
-            float: right;
-            max-width: 50%;
-            margin: 0px 1em 1em 0;
-          }
-          &.float_right {
-            float: right;
-            max-width: 50%;
-            margin: 0px 0 1em 1em;
-          }
-        }
-        a:link,
-        a:visited,
-        a {
-          background: transparent;
-          color: #222;
-          font-weight: bold;
-          text-decoration: underline;
-          text-align: left;
-          word-wrap: break-word;
-        }
-        p {
-          a {
-            word-wrap: break-word;
-          }
-          a[href^="http"]:after {
-            content: " ("attr(href) ")";
-            font-size: 90%;
-          }
-          a[href^="#"]:after {
-            display: none;
-          }
-        }
-        abbr[title]:after {
-          content: " ("attr(title) ")";
-        }
-        table {
-          background: #FFF;
-        }
-        li {
-          content: "» ";
-        }
+    img {
+      &.float_left {
+        float: right;
+        max-width: 50%;
+        margin: 0px 1em 1em 0;
       }
+      &.float_right {
+        float: right;
+        max-width: 50%;
+        margin: 0px 0 1em 1em;
+      }
+    }
+    a:link,
+    a:visited,
+    a {
+      background: transparent;
+      color: #222;
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: left;
+      word-wrap: break-word;
+    }
+    p {
+      a {
+        word-wrap: break-word;
+      }
+      a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+      }
+      a[href^="#"]:after {
+        display: none;
+      }
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    table {
+      background: #fff;
+    }
+    li {
+      content: "» ";
+    }
+  }
 
   /* 檔案下載*/
   .file_download {
@@ -139,7 +144,7 @@
         width: 30%;
         height: 4cm;
         display: inline-block;
-        background: #DEDEDE;
+        background: #dedede;
         position: relative;
 
         &:before {
@@ -164,17 +169,16 @@
       }
     }
   }
-  .interpreter .interpretertable table{
-    border:#000 1px solid;
-    margin-bottom:1em;
-    tr:first-child th{
-      color:#000;
-      background:#fff;
-      border:#000 1px solid;
+  .interpreter .interpretertable table {
+    border: #000 1px solid;
+    margin-bottom: 1em;
+    tr:first-child th {
+      color: #000;
+      background: #fff;
+      border: #000 1px solid;
     }
-    tr th{
-      border:#000 1px solid;
+    tr th {
+      border: #000 1px solid;
     }
   }
 }
-
