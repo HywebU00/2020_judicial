@@ -38,14 +38,14 @@
             <div class="notary_search_block">
               <form action="" class="form_inline">
                 <div class="form_grp">
-                  <label for="">地區</label>  
+                  <label for="">地區</label>
                   <select name="" id="">
                     <option value="">台北</option>
                     <option value="">士林</option>
                   </select>
                 </div>
                 <div class="form_grp">
-                  <label for="">職務範圍</label>  
+                  <label for="">職務範圍</label>
                   <select name="" id="">
                     <option value="">全職</option>
                     <option value="">兼職</option>
@@ -59,14 +59,14 @@
                   <input name="" type="submit" title="查詢" value="查詢" />
                 </div>
                 <a href="" class="code">功能說明</a>
-              </form>  
+              </form>
             </div>
             <!-- 表 -->
             <div class="notarytable">
               <!-- 表上 -->
               <table>
                 <tr>
-                  <th colspan="5">地區  民間公證人  姓名</th>
+                  <td colspan="5">地區  民間公證人  姓名</td>
                 </tr>
                 <tr>
                   <th width="10%">姓名</th>

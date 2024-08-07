@@ -10118,7 +10118,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: relative;
 }
 .method_block .function ul li a:hover, .method_block .function ul li a:focus {
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #917300;
@@ -10396,7 +10396,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .qa_list > ul > li:nth-child(even) .question a,
 .meeting_list > ul > li:nth-child(even) .question a {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 .qa_list .question,
 .meeting_list .question {
@@ -10525,7 +10525,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .qa_list .answer .share .shareButton:hover, .qa_list .answer .share .shareButton:focus,
 .meeting_list .answer .share .shareButton:hover,
 .meeting_list .answer .share .shareButton:focus {
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #917300;
@@ -11340,7 +11340,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: absolute;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-left: none;
   border-bottom: none;
   -webkit-transform: rotate(-135deg);
@@ -11375,7 +11375,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: absolute;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-left: none;
   border-bottom: none;
   -webkit-transform: rotate(45deg);
@@ -11795,12 +11795,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   border: #ddd 1px solid;
   border: #ddd 1px solid;
 }
-.notary .notarytable table tr:first-child th {
+.notary .notarytable table tr:first-child td {
   background: #254A7D;
   color: #fff;
   font-size: 1.125em;
 }
-.notary .notarytable table tr:first-child th:nth-child(even) {
+.notary .notarytable table tr:first-child td:nth-child(even) {
   background: #fff;
 }
 .notary .notarytable table tr:last-child th,
